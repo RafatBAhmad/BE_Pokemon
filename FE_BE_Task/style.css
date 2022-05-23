@@ -1,0 +1,275 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #222;
+  background: #f7f5f0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.main-nav {
+  width: 100%;
+  background: black;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+.Ssearch {
+  margin-right: auto;
+  margin-top: 10px;
+}
+.Ssearch input {
+  color: #f8d41f;
+  background-color: #222;
+  padding: 20px;
+  font-size: 30px;
+  width: 500px;
+  font-weight: bold;
+}
+.Ssearch button {
+  color: #f8d41f;
+  background-color: #222;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.search-header button {
+  color: #f8d41f;
+  background-color: #222;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.search-header {
+  float: left;
+  color: green;
+  margin-left: 300px;
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.search {
+  display: block;
+  margin-right: 300px;
+  margin-left: auto;
+  font-size: 15px;
+  color: #f8d41f;
+  padding: 5px 10px 10px 10px;
+  transition: all 0.5s;
+  background-color: #222;
+  font-weight: bold;
+}
+
+.pokemons {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all 1s;
+}
+.pokemons:hover {
+  border-color: yellow;
+  background-color: turquoise;
+}
+header {
+  text-align: center;
+  background: url("imges/sky.jpg") no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+header {
+  line-height: 1.5;
+}
+header .profile-image {
+  margin-top: 50px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all 0.5s;
+}
+header .profile-image:hover {
+  transform: scale(1.5) rotate(360deg);
+}
+
+.pokemonImg {
+  width: 250px;
+  height: 250px;
+}
+
+h3 {
+  text-align: center;
+}
+.pokemon {
+  padding: 20px;
+}
+.pokemons {
+  background: #f1f1f1;
+  width: 21%;
+  float: left;
+  text-align: center;
+  padding: 25px;
+  border-radius: 6px;
+  border: 10px #f8d41f solid;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.name {
+  font-size: 3em;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #333;
+}
+
+.details {
+  text-align: center;
+  color: grey;
+}
+
+input[type="range"] {
+  width: 30px;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: 0.75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: 0.4;
+  transition: all 0.5s;
+}
+a.twitter {
+  background-image: url(imges/twitter.svg);
+}
+a.linkedin {
+  background-image: url(imges/linkedin.svg);
+}
+a.github {
+  background-image: url(imges/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+@media screen and (min-width: 720px) {
+  .flex {
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .search {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+}
